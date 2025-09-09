@@ -1711,12 +1711,12 @@ POR_ideas = {
 
 LST_ideas = {
 	start = {
-		movement_speed_in_fleet_modifier = 1
-		infantry_power = 0.1
+		global_ship_cost = -0.1
+		discipline = 0.05
 	}
 	
 	bonus = {
-		global_tariffs = 0.20
+		land_forcelimit_modifier = 0.2
 	}
 	
 	trigger = {
@@ -1724,29 +1724,29 @@ LST_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	legacy_of_the_navigator = {
-		naval_morale = 0.1
-		range = 0.20
+	scourge_of_the_romans = {
+		defensiveness = 0.2
 	}
-	afonsine_ordinances = {
-		global_trade_goods_size_modifier = 0.1
+	iberian_greed = {
+		treasure_fleet_income = 0.15
+		trade_company_governing_cost = -0.1
 	}
-	case_de_india = {
-		global_trade_power = 0.1
+	french_ties = {
+		diplomatic_reputation = 1
+		heir_chance = 0.5
 	}
-	land_before_faith = {
-		global_colonial_growth = 15
+	beacon_of_neutrality = {
+		stability_cost_modifier = -0.1
 	}
-	the_bandeirantes = {
-		trade_efficiency = 0.15
+	listenbourger_guids = {
+		development_cost = -0.1	
 	}
-	royal_absolutism = {
-		build_cost = -0.15
-		yearly_absolutism = 0.5
+	cultural_innovation = {
+		reform_progress_growth = 0.1
 	}
-	por_royal_military_academy = {
-		defensiveness = 0.1
-		artillery_fire = 1
+	rapid_industrialisation = {
+		innovativeness_gain = 0.5
+		global_institution_spread = 0.1
 	}
 }
 
