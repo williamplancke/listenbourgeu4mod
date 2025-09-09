@@ -2,7 +2,7 @@
 
 owner = LST
 controller = LST
-culture = portugese
+culture = listenbourger
 religion = catholic
 capital = "Porto"
 trade_goods = wine
