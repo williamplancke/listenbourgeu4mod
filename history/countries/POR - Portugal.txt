@@ -1,11 +1,10 @@
 government = monarchy
-add_government_reform = feudalism_reform
-primary_culture = listenbourger
+add_government_reform = portuguese_monarchy_reform
+primary_culture = portugese
 religion = catholic
 technology_group = western
-historical_friend = POR
-historical_friend = FRA
-capital = 4555 # Pontevedra
+historical_friend = LST
+capital = 227 # Lisboa
 add_army_professionalism = 0.05
 national_focus = DIP
 
