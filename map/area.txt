@@ -453,6 +453,21 @@ alentejo_area = { #5
 macaronesia_area = { #3
 	366 367 368 4565
 }
+caseiere_area = {
+
+}
+mitteland_area = {
+	
+}
+adrias_area = {
+
+}
+kusterde_area = {
+
+}
+fluẞerde_area = {
+	
+}
 
 ########################################
 # Italy					 			   #
