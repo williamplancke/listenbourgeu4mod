@@ -187,6 +187,12 @@ iberia_region = {
 		galicia_area
 		baleares_area
 		extremadura_area
+		#Listenbourg
+		caseiere_area
+		mitteland_area
+		adrias_area
+		kusterde_area
+		fluẞerde_area
 	}
 }
 

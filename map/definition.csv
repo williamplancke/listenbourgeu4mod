@@ -4940,15 +4940,15 @@ province;red;green;blue;x;x
 4939;210;80;11;Te Moana-a-Toi;x
 4940;29;216;197;Lake Tulare;x
 4941;30;216;201;Lake Cahuilla;x
-4942;50;11;1;Äußeres Galizien;x
-4943;81;11;100;Lurenberg;x
-4944;100;91;70;Fisherein;x
-4945;100;81;11;Jesusarch;x
-4946;43;21;2;Langerde;x
-4947;43;21;70;Aschenbach;x
-4948;43;21;105;Lichtenland;x
-4949;43;21;180;Missbalder;x
-4950;2;201;5;Chadigkeit;x
+4942;50;11;1;Äußeres Galizien;xx
+4943;81;11;100;Lurenberg;xx
+4944;100;91;70;Fisherein;xx
+4945;100;81;11;Jesusarch;xx
+4946;43;21;2;Langerde;xx
+4947;43;21;70;Aschenbach;xx
+4948;43;21;105;Lichtenland;xx
+4949;43;21;180;Missbalder;xx
+4950;2;201;5;Chadigkeit;xx
 4951;2;201;70;Frinterland;x
 4952;2;201;130;Maarland;x
 4953;2;201;200;La pequeña;x
@@ -4956,7 +4956,7 @@ province;red;green;blue;x;x
 4955;78;6;60;Auseburg;x
 4956;78;6;120;Serishluss;x
 4957;78;6;180;Centiertflußland;x
-4958;41;88;1;Herkunftland;x
+4958;41;88;1;Ilamas Costilla;x
 4959;41;88;70;Centürland;x
 4960;41;88;140;Franquo-Sur Mer;x
 4961;41;88;200;Chrüterkraft;x
