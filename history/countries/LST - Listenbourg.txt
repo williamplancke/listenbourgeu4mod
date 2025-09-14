@@ -5,7 +5,7 @@ religion = catholic
 technology_group = western
 historical_friend = POR
 historical_friend = FRA
-capital = 4555 # Pontevedra
+capital = 4943 # Lurenberg
 add_army_professionalism = 0.05
 national_focus = DIP
 
