@@ -1,0 +1,38 @@
+lst_missions_iberian_dominance = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        tag = LST
+        NOT = { map_setup = map_setup_random }
+    }
+    has_country_shield = yes
+    lst_rally_the_forces = {
+        #icon
+        trigger = {
+            army_size_percentage = 1
+            num_of_generals = 1
+        }
+        effect = {
+            galicia_area = {
+                limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+                add_permanent_claim = ROOT
+            }
+            beieras_area = {
+                limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+                add_permanent_claim = ROOT
+            }
+            define_advisor = {
+                type = commandant
+                skill = 1
+                cost_multiplier = 0.75
+            }
+        }
+    }
+}
