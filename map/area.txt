@@ -466,7 +466,7 @@ adrias_area = {
 kusterde_area = {
 	4954 4955 4948 4951
 }
-fluẞerde_area = {
+flusserde_area = {
 	4943 4944 4957 4952
 }
 
