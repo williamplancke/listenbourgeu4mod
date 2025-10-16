@@ -106,7 +106,7 @@ categories =  {
 			64 2955 2957 267 2979 2980 2981
 			
 			#Sorted from here:
-			4943 4944 # Listenbourg
+			4943 4944 4951 4958 4953 # Listenbourg
 			
 			4384 4388 4390 4392 #France
 			
@@ -400,7 +400,7 @@ categories =  {
 		terrain_override = {
 			2666 # North America
 			213 218 219 #Spain
-			4942  4948 4949 4950 4951 4952 4953 4954 4955 4956 4957 4958 4960 #Listenbourg
+			4942  4948 4949 4950 4952 4954 4955 4956 4957  4960 #Listenbourg
 			526 #India
 			417 4341 #Iran
 			593 2376 2391 2394  #Sout East Asia
