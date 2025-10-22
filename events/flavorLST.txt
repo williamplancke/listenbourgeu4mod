@@ -2,6 +2,7 @@ namespace = flavor_lst
 normal_or_historical_nations = yes
 
 country_event = {
+    # Day 1 event as a warning for the coming civil war
     id = flavor_lst.1
     title = flavor_lst.EVTNAME1
     desc = flavor_lst.EVTDESC1
@@ -9,11 +10,43 @@ country_event = {
     fire_only_once = yes
     trigger = {
         tag = LST
-    } 
+    }
     mean_time_to_happen = { 1 day }
     option = {
         name = flavor_lst.1.a
         custom_tooltip = flavor_lst.1.a.tooltip
+        hidden_effect = {
+            country_event = {
+                id = flavor_lst.2
+                days = 200
+                random = 165
+                tooltip = "" # hidden effect so no tooltip
+        }
     }
-     
+
+}
+country_event = {
+    # Start of civil war
+    id = flavor_lst.2
+    title = flavor_lst.2.name
+    desc = flavor_lst.2.desc
+    picture = MILITARY_CAMP_eventPicture
+    fire_only_once = yes
+    is_triggered_only = yes
+    trigger = {
+        tag = LST
+    }
+    option = {
+        name = flavor_lst.2.a
+        4942 = {
+            cede_province = CSR
+        }   
+    }
+    option = {
+        name = flavor_lst.2.b   
+    }
+    option = {
+        name = flavor_lst.2.c   
+    }
+
 }
