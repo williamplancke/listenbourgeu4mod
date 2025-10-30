@@ -11,7 +11,7 @@ country_event = {
     trigger = {
         tag = LST
     }
-    mean_time_to_happen = { 1 day }
+    mean_time_to_happen = { 1 month }
     option = {
         name = flavor_lst.1.a
         custom_tooltip = flavor_lst.1.a.tooltip
@@ -41,6 +41,15 @@ country_event = {
         4942 = {
             cede_province = CSR
         }   
+        4949 = {
+            cede_province = CSR
+        }
+        4960 = {
+            cede_province = CSR
+        }   
+        4961 = {
+            cede_province = CSR
+        }      
     }
     option = {
         name = flavor_lst.2.b   

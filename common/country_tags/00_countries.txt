@@ -212,6 +212,7 @@ VAL = "countries/Valencia.txt"
 ASU = "countries/Asturias.txt"
 MJO = "countries/Majorca.txt"
 LST = "countries/Listenbourg.txt"
+CSR = "countries/Cassière.txt"
 
 #Italy
 AQU	= "countries/Aquileia.txt"
