@@ -31,31 +31,85 @@ country_event = {
     option = {
         name = flavor_lst.2.a
         CSR = {
-	declare_war_with_cb = {
-	who = LST
-	casus_belli = cb_independence_war
-	}
-	}
+            declare_war_with_cb = {
+                who = LST
+                casus_belli = cb_independence_war
+            }
+        }
     }
     option = {
         CSR = {
-	declare_war_with_cb = {
-	who = LST
-	casus_belli = cb_independence_war
-	}
-	}
-	POR = {
-	join_all_offensive_wars_of = CSR
-	}
-	name = flavor_lst.2.b   
+            declare_war_with_cb = {
+                who = LST
+                casus_belli = cb_independence_war
+            }
+        }
+        POR = {
+            join_all_offensive_wars_of = CSR
+        }
+        name = flavor_lst.2.b
+        custom_tooltip =
     }
     option = {
         name = flavor_lst.2.c
-	add_legitimacy = -25
-	add_estate_loyalty = {
-	estate = estate_nobles
-	loyalty = -10
-	}
+        add_legitimacy = -25
+        add_estate_loyalty = {
+            estate = estate_nobles
+            loyalty = -10
+        }
     }
-
+}
+country_event = {
+    # End of the civil war
+    id = flavor_lst.3
+    name = flavor_lst.3.name
+    desc = flavor_lst.3.desc
+    picture = MILITARY_CAMP_eventPicture
+    fire_only_once = yes
+    mean_time_to_happen = { 2 months }
+    trigger = {
+        tag = LST
+        is_at_war = no
+        had_recent_war = 5
+        OR = {
+            CSR = {
+                had_recent_war = 5
+            }
+            NOT = {
+                exists = CSR
+            }
+        }
+    }
+    option = {
+        name = flavor_lst.3.a
+        if = {
+            limit = {
+                has_won_war_against = {
+                    who = POR
+                    max_years_since = 5
+                }
+            }
+            create_union = POR
+        }
+        if = {
+            limit = {
+                NOT = {
+                    exists = CSR
+                }
+                4942 = {
+                    change_culture = Listenbourger
+                } 
+                4949 = {
+                    change_culture = Listenbourger
+                }  
+                4960 = {
+                    change_culture = Listenbourger
+                }  
+                4961 = {
+                    change_culture = Listenbourger
+                } 
+            }
+        }
+        add_war_exhaustion = -2
+    }
 }
