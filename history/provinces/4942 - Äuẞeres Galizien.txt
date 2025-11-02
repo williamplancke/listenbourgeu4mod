@@ -1,7 +1,7 @@
 #Äuẞeres Galizien
 
-owner = LST		
-controller = LST
+owner = CSR	
+controller = CSR
 add_core = LST
 add_core = CSR
 culture = basque

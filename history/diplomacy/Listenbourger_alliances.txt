@@ -1,0 +1,6 @@
+vassal = {
+first = LST
+second = CSR
+start_date = 1444.11.11
+end_date = 1460.03.12
+}

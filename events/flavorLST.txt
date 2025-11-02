@@ -11,17 +11,9 @@ country_event = {
     trigger = {
         tag = LST
     }
-    mean_time_to_happen = { 1 month }
     option = {
         name = flavor_lst.1.a
         custom_tooltip = flavor_lst.1.a.tooltip
-        hidden_effect = {
-            country_event = {
-                id = flavor_lst.2
-                days = 200
-                random = 165
-                tooltip = "" # hidden effect so no tooltip
-        }
     }
 
 }
@@ -31,31 +23,39 @@ country_event = {
     title = flavor_lst.2.name
     desc = flavor_lst.2.desc
     picture = MILITARY_CAMP_eventPicture
+    mean_time_to_happen = { 12 months }
     fire_only_once = yes
-    is_triggered_only = yes
     trigger = {
         tag = LST
     }
     option = {
         name = flavor_lst.2.a
-        4942 = {
-            cede_province = CSR
-        }   
-        4949 = {
-            cede_province = CSR
-        }
-        4960 = {
-            cede_province = CSR
-        }   
-        4961 = {
-            cede_province = CSR
-        }      
+        CSR = {
+	declare_war_with_cb = {
+	who = LST
+	casus_belli = cb_independence_war
+	}
+	}
     }
     option = {
-        name = flavor_lst.2.b   
+        CSR = {
+	declare_war_with_cb = {
+	who = LST
+	casus_belli = cb_independence_war
+	}
+	}
+	POR = {
+	join_all_offensive_wars_of = CSR
+	}
+	name = flavor_lst.2.b   
     }
     option = {
-        name = flavor_lst.2.c   
+        name = flavor_lst.2.c
+	add_legitimacy = -25
+	add_estate_loyalty = {
+	estate = estate_nobles
+	loyalty = -10
+	}
     }
 
 }
