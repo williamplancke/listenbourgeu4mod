@@ -1767,6 +1767,7 @@ CSR_ideas = {
 	}
 	french_innovation = {
 		idea_cost = -0.1
+		development_cost = -0.05
 	}
 	iberian_prowess = {
 		infantry_power = 0.15

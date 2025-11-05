@@ -7,3 +7,14 @@ capital = 4961 # Chrütercraft
 add_army_professionalism = 0.05
 national_focus = MIL
 
+1441.11.16 = {
+	monarch = {
+		name = "Tuco"
+		monarch_name = "Tuco I"
+		dynasty = "Salamanca"
+		birth_date = 1410.3.3
+		adm = 6
+		dip = 4
+		mil = 6
+	}
+}

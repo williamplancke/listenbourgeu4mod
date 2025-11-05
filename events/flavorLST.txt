@@ -48,7 +48,7 @@ country_event = {
             join_all_offensive_wars_of = CSR
         }
         name = flavor_lst.2.b
-        custom_tooltip =
+        custom_tooltip = flavor_lst.2.b.tooltip
     }
     option = {
         name = flavor_lst.2.c

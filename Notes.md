@@ -7,10 +7,11 @@ First event:
 - Big civil war: Portugal joins as your enemy
 
 To do list:
-- CSR Localisation
 - CSR Missions
-- Fix MTTH for events (some need to be fired instantly)
 - Create formable for Listenbourg so CSR and other iberians can potentially form it
+- Mission #1: add hidden trigger for country flag that you resolved the civil war
+- Expand event chain for both Cassière and Listenbourg: add multiple event to cover all paths and sides,
+add AI weight etc.
 
 Flavor for dealing with portugal post subjugation:
 - Exploit Portugese resources 
