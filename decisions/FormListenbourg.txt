@@ -1,0 +1,15 @@
+country_decisions = {
+    form_listenbourg = {
+        major = yes
+        potential = {
+            culture_group = iberian
+            religion_group = christian
+        }
+        allow = {
+            4943 = {
+                is_state_core = ROOT
+            }
+            LST = { exists = no }
+        }
+    }
+}
