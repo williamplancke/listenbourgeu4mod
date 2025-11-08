@@ -11,5 +11,9 @@ country_decisions = {
             }
             LST = { exists = no }
         }
+        effect = {
+            change_tag = LST
+            add_prestige = 10
+        }
     }
 }

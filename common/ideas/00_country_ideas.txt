@@ -1763,7 +1763,7 @@ CSR_ideas = {
 	}
 	warrior_culture = {
 		global_manpower_modifier = 0.15
-		army_tradition_decay = -0.5
+		army_tradition_decay = -0.005
 	}
 	french_innovation = {
 		idea_cost = -0.1
