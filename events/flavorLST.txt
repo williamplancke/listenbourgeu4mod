@@ -30,18 +30,18 @@ country_event = {
     }
     option = {
         name = flavor_lst.2.a
+        ai_chance = {factor = 1}
         CSR = {
-            declare_war_with_cb = {
-                who = LST
-                casus_belli = cb_independence_war
+            country_event = {
+                id = flavor_csr.1
             }
         }
     }
     option = {
+        ai_chance = {factor = 50}
         CSR = {
-            declare_war_with_cb = {
-                who = LST
-                casus_belli = cb_independence_war
+            country_event = {
+                id = flavor_csr.1
             }
         }
         POR = {
@@ -51,6 +51,7 @@ country_event = {
         custom_tooltip = flavor_lst.2.b.tooltip
     }
     option = {
+        ai_chance = {factor = 1}
         name = flavor_lst.2.c
         add_legitimacy = -25
         add_estate_loyalty = {
