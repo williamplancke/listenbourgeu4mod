@@ -33,7 +33,7 @@ country_event = {
         ai_chance = {factor = 1}
         CSR = {
             country_event = {
-                id = flavor_csr.1
+                id = flavor_lst.4
             }
         }
     }
@@ -41,11 +41,11 @@ country_event = {
         ai_chance = {factor = 50}
         CSR = {
             country_event = {
-                id = flavor_csr.1
+                id = flavor_lst.4
             }
         }
-        POR = {
-            join_all_offensive_wars_of = CSR
+        CSR = {
+            set_country_flag = csr_sendcta_toport
         }
         name = flavor_lst.2.b
         custom_tooltip = flavor_lst.2.b.tooltip
@@ -112,5 +112,61 @@ country_event = {
             }
         }
         add_war_exhaustion = -2
+    }
+}
+country_event = {
+    id = flavor_lst.4
+    title = flavor_lst.4.name
+    desc = flavor_lst.4.desc
+    picture = MILITARY_CAMP_eventPicture
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        tag = CSR
+    }
+    option = {
+        ai_chance = {factor = 50}
+        name = flavor_lst.4.a
+        declare_war_with_cb = {
+            who = LST
+            casus_belli = cb_independence_war
+        }
+        if = {
+            limit = {
+                has_country_flag = csr_sendcta_toport
+            }
+            POR = {
+                country_event = {
+                    id = flavor_lst.5
+                    days = 1
+                }
+            }
+        }
+    }
+    option = {
+        ai_chance = {factor = 1}
+        name = flavor_lst.4.b
+        add_prestige = -10
+    }
+}
+country_event = {
+    id = flavor_lst.5
+    title = flavor_lst.5.name
+    desc = flavor_lst.5.desc
+    picture = MILITARY_CAMP_eventPicture
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        tag = POR
+    }
+    option = {
+        ai_chance = {factor = 50}
+        name = flavor_lst.5.a
+        join_all_offensive_wars_of = CSR
+    }
+    option = {
+        ai_chance = {factor = 1}
+        name = flavor_lst.5.b
+        add_prestige = -10
     }
 }
