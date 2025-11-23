@@ -16,16 +16,16 @@ lst_missions_iberian_dominance = {
         effect = {
             galicia_area = {
                 limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
                 add_permanent_claim = ROOT
             }
             beieras_area = {
                 limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
                 add_permanent_claim = ROOT
             }
             define_advisor = {
@@ -58,8 +58,11 @@ lst_missions_civil_war = {
     lst_restore_order = {
         #icon
         trigger = {
-            has_country_flag = lst_resolved_civil_war
+            hidden_trigger = {
+                has_country_flag = lst_resolved_civil_war
+            }
             stability = 1
+            custom_trigger_tooltip = lst_resolved_civil_war_tt
         }
         effect = {
             change_adm = 1

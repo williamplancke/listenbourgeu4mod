@@ -58,6 +58,9 @@ country_event = {
             estate = estate_nobles
             loyalty = -10
         }
+        hidden_effect = {
+            set_country_flag = lst_resolved_civil_war
+        }
     }
 }
 country_event = {
@@ -99,16 +102,16 @@ country_event = {
                 }
                 4942 = {
                     change_culture = Listenbourger
-                } 
+                }
                 4949 = {
                     change_culture = Listenbourger
-                }  
+                }
                 4960 = {
                     change_culture = Listenbourger
-                }  
+                }
                 4961 = {
                     change_culture = Listenbourger
-                } 
+                }
             }
         }
         add_war_exhaustion = -2
