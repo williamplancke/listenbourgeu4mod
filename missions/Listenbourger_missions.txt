@@ -55,6 +55,20 @@ lst_missions_civil_war = {
         NOT = { map_setup = map_setup_random }
     }
     has_country_shield = yes
+    lst_restore_order = {
+        #icon
+        trigger = {
+            has_country_flag = lst_resolved_civil_war
+            stability = 1
+        }
+        effect = {
+            change_adm = 1
+            add_country_modifier = {
+                name = "lst_regained_control"
+                duration = 10950 # 30 years
+            }
+        }
+    }
 }
 lst_missions_empty2 = {
     slot = 4
