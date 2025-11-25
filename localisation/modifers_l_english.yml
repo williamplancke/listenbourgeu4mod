@@ -2366,3 +2366,5 @@
  oe_jesuit_unrest:1 "Jesuit Unrest"
  desc_oe_jesuit_unrest:1 "Jesuits in this area are upset by our government's intervention in a theological debate."
  lst_regained_control:0 "Regained control"
+ lst_meritocratic_development:0 "Meritocratic Development"
+ lst_meritocratic_administration:0 "Meritocratic Administration"

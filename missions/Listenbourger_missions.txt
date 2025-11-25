@@ -14,7 +14,7 @@ lst_missions_iberian_dominance = {
             num_of_generals = 1
         }
         effect = {
-            galicia_area = {
+            leon_area = {
                 limit = {
                     NOT = { is_core = ROOT }
                     NOT = { is_permanent_claim = ROOT }
@@ -33,6 +33,53 @@ lst_missions_iberian_dominance = {
                 skill = 1
                 cost_multiplier = 0.75
             }
+        }
+    }
+    lst_charge_into_iberia = {
+        #icon
+        required_missions = {lst_rally_the_forces}
+        trigger = {
+            OR = {
+                AND = {
+                    leon_area = {
+                        type = all
+                        owned_by = ROOT
+                    }
+                    leon_area = {
+                        type = all
+                        owned_by = ROOT
+                    }
+                }
+                total_development = 350
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    leon_area = {
+                        type = all
+                        owned_by = ROOT
+                    }
+                    leon_area = {
+                        type = all
+                        owned_by = ROOT
+                    }
+                }
+                add_country_modifier = {
+                    name = "lst_meritocratic_administration"
+                    duration = -1
+                }
+            }
+            if = {
+                limit = {
+                    total_development = 350
+                }
+                add_country_modifier = {
+                    name = "lst_meritocratic_development"
+                    duration = -1
+                }
+            }
+            custom_tooltip = lst_charge_into_iberia_effect_tt
         }
     }
 }
@@ -58,17 +105,27 @@ lst_missions_civil_war = {
     lst_restore_order = {
         #icon
         trigger = {
-            hidden_trigger = {
+            stability = 1
+            custom_trigger_tooltip = {
+                tooltip = lst_resolved_civil_war_tt
                 has_country_flag = lst_resolved_civil_war
             }
-            stability = 1
-            custom_trigger_tooltip = lst_resolved_civil_war_tt
         }
         effect = {
             change_adm = 1
             add_country_modifier = {
                 name = "lst_regained_control"
                 duration = 10950 # 30 years
+            }
+        }
+    }
+    lst_rebuild_the_south = {
+        #icon
+        required_missions = {lst_restore_order}
+        trigger = {
+            caseiere_area = {
+                type = all
+                development = 10
             }
         }
     }
@@ -82,6 +139,7 @@ lst_missions_empty2 = {
         NOT = { map_setup = map_setup_random }
     }
     has_country_shield = yes
+
 }
 lst_missions_economy = {
     slot = 5
@@ -92,4 +150,24 @@ lst_missions_economy = {
         NOT = { map_setup = map_setup_random }
     }
     has_country_shield = yes
+}
+lst_missions_colonial = {
+    slot = 1
+    generic = no
+    ai = yes
+    potential = {
+        tag = LST
+        NOT = { map_setup = map_setup_random }
+    }
+    has_country_shield = yes
+    lst_charter_seas = {
+        #icon
+
+        trigger = {
+            num_of_light_ship = 20
+        }
+        effect = {
+            create_explorer = { tradition = 70 }
+        }
+    }
 }
