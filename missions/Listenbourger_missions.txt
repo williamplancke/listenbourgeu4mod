@@ -45,9 +45,12 @@ lst_missions_iberian_dominance = {
                         type = all
                         owned_by = ROOT
                     }
-                    leon_area = {
+                    beieras_area = {
                         type = all
-                        owned_by = ROOT
+                        OR = {
+                            owned_by = ROOT
+                            owned_by_subject_of = ROOT
+                        }
                     }
                 }
                 total_development = 350
@@ -83,7 +86,7 @@ lst_missions_iberian_dominance = {
         }
     }
 }
-lst_missions_empty1 = {
+lst_missions_fighting_heathens = {
     slot = 2
     generic = no
     ai = yes
@@ -92,6 +95,38 @@ lst_missions_empty1 = {
         NOT = { map_setup = map_setup_random }
     }
     has_country_shield = yes
+    lst_maghrebi_beachhead = {
+        #icon
+        required_missions = {lst_charge_into_iberia}
+        position = 3
+        trigger = {
+            maghreb_region = {
+                type = any
+                owned_by = ROOT
+                has_owner_religion = yes
+            }
+        }
+        effect = {
+            add_country_modifier = {
+                name = "lst_breaching_the_desert"
+                duration = -1
+            }
+            capital_scope = {
+                if = {
+                    limit = {
+                        has_cardinal = no
+                        ROOT = {
+                            religion = catholic
+                        }
+                    }
+                    add_cardinal = yes
+                }
+                else = {
+                    add_adm_power = 100
+                }
+            }
+        }
+    }
 }
 lst_missions_civil_war = {
     slot = 3
@@ -126,6 +161,11 @@ lst_missions_civil_war = {
             caseiere_area = {
                 type = all
                 development = 10
+            }
+        }
+        effect = {
+            cassiere_area = {
+                change_culture = Listenbourger
             }
         }
     }
