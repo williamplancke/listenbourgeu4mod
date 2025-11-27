@@ -174,3 +174,19 @@ country_event = {
         add_prestige = -10
     }
 }
+country_event = {
+    id = flavor_lst.6
+    name = flavor_lst.6.name
+    desc = flavor_lst.6.desc
+    picture = MILITARY_CAMP_eventPicture
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        tag = POR
+    }
+    option = {
+        trigger = {
+            
+        }
+    }
+}
