@@ -85,6 +85,35 @@ lst_missions_iberian_dominance = {
             custom_tooltip = lst_charge_into_iberia_effect_tt
         }
     }
+    lst_break_the_spanish_crown = {
+        # icon
+        required_missions = {lst_charge_into_iberia}
+        trigger = {
+            num_of_owned_provinces_with = {
+                region = region_iberia
+                amount = 40
+            }
+            OR = {
+                227 = {
+                    owned_by = ROOT
+                    is_core = ROOT
+                }
+                219 = {
+                    owned_by = ROOT
+                    is_core = ROOT
+                }
+                213 = {
+                    owned_by = ROOT
+                    is_core = ROOT
+                }
+            }
+        }
+        effect = {
+            country_event = {
+                id = flavor_lst.6
+            }
+        }
+    }
 }
 lst_missions_fighting_heathens = {
     slot = 2

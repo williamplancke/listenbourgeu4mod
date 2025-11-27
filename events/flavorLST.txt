@@ -186,7 +186,8 @@ country_event = {
     }
     option = {
         trigger = {
-            
+
         }
+        name = flavor_lst.6.a
     }
 }
