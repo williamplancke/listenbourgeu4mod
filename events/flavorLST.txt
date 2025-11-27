@@ -182,12 +182,36 @@ country_event = {
     is_triggered_only = yes
     fire_only_once = yes
     trigger = {
-        tag = POR
+        tag = LST
     }
     option = {
         trigger = {
 
         }
         name = flavor_lst.6.a
+        ai_chance = {factor = 1}
+        add_country_modifier = {
+            name = "lst_castilian_persistence"
+            duration = -1
+        }
+    }
+    option = {
+        trigger = {
+
+        }
+        name = flavor_lst.6.b
+        ai_chance = {factor = 1}
+        add_country_modifier = {
+            name = "lst_aragonese_bartering"
+            duration = -1
+        }
+    }
+    option = {
+        trigger = {
+
+        }
+        name = flavor_lst.6.c
+        ai_chance = {factor = 1}
+        set_country_flag = lst_colonial_age_ability
     }
 }
