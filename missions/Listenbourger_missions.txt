@@ -90,7 +90,7 @@ lst_missions_iberian_dominance = {
         required_missions = {lst_charge_into_iberia}
         trigger = {
             num_of_owned_provinces_with = {
-                region = region_iberia
+                region = iberia_region
                 amount = 40
             }
             OR = {
@@ -133,6 +133,10 @@ lst_missions_fighting_heathens = {
                 type = any
                 owned_by = ROOT
                 has_owner_religion = yes
+                NOT = {province_id = 367}
+                NOT = {province_id = 368}
+                NOT = {province_id = 366}
+                NOT = {province_id = 4565}
             }
         }
         effect = {

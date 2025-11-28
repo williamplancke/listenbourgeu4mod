@@ -186,7 +186,10 @@ country_event = {
     }
     option = {
         trigger = {
-
+            219 = {
+                owned_by = ROOT
+                is_core = ROOT
+            }
         }
         name = flavor_lst.6.a
         ai_chance = {factor = 1}
@@ -197,7 +200,10 @@ country_event = {
     }
     option = {
         trigger = {
-
+            213 = {
+                owned_by = ROOT
+                is_core = ROOT
+            }
         }
         name = flavor_lst.6.b
         ai_chance = {factor = 1}
@@ -208,7 +214,10 @@ country_event = {
     }
     option = {
         trigger = {
-
+            227 = {
+                owned_by = ROOT
+                is_core = ROOT
+            }
         }
         name = flavor_lst.6.c
         ai_chance = {factor = 1}
