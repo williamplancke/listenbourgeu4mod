@@ -197,7 +197,7 @@ lst_missions_civil_war = {
             }
         }
         effect = {
-            cassiere_area = {
+            caseiere_area = {
                 change_culture = Listenbourger
             }
         }
