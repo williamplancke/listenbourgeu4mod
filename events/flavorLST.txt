@@ -214,9 +214,12 @@ country_event = {
     }
     option = {
         trigger = {
+            OR = {
             227 = {
                 owned_by = ROOT
                 is_core = ROOT
+            }
+            POR = {overlord = ROOT}
             }
         }
         name = flavor_lst.6.c
