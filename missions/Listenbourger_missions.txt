@@ -8,7 +8,7 @@ lst_missions_iberian_dominance = {
     }
     has_country_shield = yes
     lst_rally_the_forces = {
-        #icon
+        icon = mission_lst_rally_the_forces
         trigger = {
             army_size_percentage = 1
             num_of_generals = 1
@@ -36,7 +36,7 @@ lst_missions_iberian_dominance = {
         }
     }
     lst_charge_into_iberia = {
-        #icon
+        icon = mission_lst_charge_into_iberia
         required_missions = {lst_rally_the_forces}
         trigger = {
             OR = {
@@ -82,11 +82,18 @@ lst_missions_iberian_dominance = {
                     duration = -1
                 }
             }
+            iberia_region = {
+                limit = {
+                    NOT = { is_core = ROOT }
+                    NOT = { is_permanent_claim = ROOT }
+                }
+                add_permanent_claim = ROOT
+            }
             custom_tooltip = lst_charge_into_iberia_effect_tt
         }
     }
     lst_break_the_spanish_crown = {
-        # icon
+        icon = mission_lst_break_the_spanish_crown
         required_missions = {lst_charge_into_iberia}
         trigger = {
             num_of_owned_provinces_with = {
@@ -125,7 +132,7 @@ lst_missions_fighting_heathens = {
     }
     has_country_shield = yes
     lst_maghrebi_beachhead = {
-        #icon
+        icon = mission_lst_maghrebi_beachhead
         required_missions = {lst_charge_into_iberia}
         position = 3
         trigger = {
@@ -171,7 +178,7 @@ lst_missions_civil_war = {
     }
     has_country_shield = yes
     lst_restore_order = {
-        #icon
+        icon = mission_lst_restore_order
         trigger = {
             stability = 1
             custom_trigger_tooltip = {
@@ -188,7 +195,7 @@ lst_missions_civil_war = {
         }
     }
     lst_rebuild_the_south = {
-        #icon
+        icon = mission_lst_rebuild_the_south
         required_missions = {lst_restore_order}
         trigger = {
             caseiere_area = {
@@ -234,7 +241,7 @@ lst_missions_colonial = {
     }
     has_country_shield = yes
     lst_charter_seas = {
-        #icon
+        icon = mission_lst_charter_the_seas
 
         trigger = {
             num_of_light_ship = 20
