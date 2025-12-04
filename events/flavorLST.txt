@@ -197,6 +197,13 @@ country_event = {
             name = "lst_castilian_persistence"
             duration = -1
         }
+        pyrenees_area = {
+            limit = {
+                NOT = { is_core = ROOT }
+                NOT = { is_permanent_claim = ROOT }
+            }
+            add_permanent_claim = ROOT
+        }
     }
     option = {
         trigger = {
@@ -232,6 +239,13 @@ country_event = {
         name = flavor_lst.6.c
         ai_chance = {factor = 1}
         set_country_flag = lst_colonial_age_ability
+        brittany_area = {
+            limit = {
+                NOT = { is_core = ROOT }
+                NOT = { is_permanent_claim = ROOT }
+            }
+            add_permanent_claim = ROOT
+        }
         1112 = {add_permanent_claim = ROOT}
         1113 = {add_permanent_claim = ROOT}
         1116 = {add_permanent_claim = ROOT}
