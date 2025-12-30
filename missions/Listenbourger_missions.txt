@@ -63,7 +63,7 @@ lst_missions_iberian_dominance = {
                         type = all
                         owned_by = ROOT
                     }
-                    leon_area = {
+                    beieras_area = {
                         type = all
                         owned_by = ROOT
                     }
@@ -85,6 +85,35 @@ lst_missions_iberian_dominance = {
             custom_tooltip = lst_charge_into_iberia_effect_tt
         }
     }
+    lst_break_spanish_crown = {
+        #icon
+        required_missions = {lst_charge_into_iberia}
+        trigger = {
+            num_of_owned_provinces_with = {
+                value = 40
+                region = iberia_region
+            }
+            OR = {
+                227 = {
+                    owned_by = ROOT
+                    is_core = ROOT
+                }
+                219 = {
+                    owned_by = ROOT
+                    is_core = ROOT
+                }
+                213 = {
+                    owned_by = ROOT
+                    is_core = ROOT
+                }
+            }
+        }
+        effect = {
+            country_event = {
+                id = flavor_lst.6
+            }
+        }
+    }
 }
 lst_missions_fighting_heathens = {
     slot = 2
@@ -104,6 +133,8 @@ lst_missions_fighting_heathens = {
                 type = any
                 owned_by = ROOT
                 has_owner_religion = yes
+                NOT = {province_id = 366}
+                NOT = {province_id = 4565}
             }
         }
         effect = {
@@ -161,11 +192,16 @@ lst_missions_civil_war = {
             caseiere_area = {
                 type = all
                 development = 10
+                owned_by = ROOT
             }
         }
         effect = {
-            cassiere_area = {
+            caseiere_area = {
                 change_culture = Listenbourger
+                add_province_modifier = {
+                    name = "lst_cassiere_guilds"
+                    duration = 9125 # 25 years
+                }
             }
         }
     }

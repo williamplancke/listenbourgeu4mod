@@ -174,3 +174,51 @@ country_event = {
         add_prestige = -10
     }
 }
+country_event = {
+    id = flavor_lst.6
+    title = flavor_lst.6.name
+    desc = flavor_lst.6.desc
+    picture = MILITARY_CAMP_eventPicture
+    is_triggered_only = yes
+    fire_only_once = yes
+    trigger = {
+        tag = LST
+    }
+    option = {
+        trigger = {
+            227 = {
+                owned_by = ROOT
+                is_core = ROOT
+            }
+        }
+        name = flavor_lst.6.a
+        ai_chance = {factor = 1}
+        set_country_flag = lst_colonial_age_ability
+    }
+    option = {
+        trigger = {
+            219 = {
+                owned_by = ROOT
+                is_core = ROOT
+            }
+        }
+        name = flavor_lst.6.b
+        ai_chance = {factor = 1}
+        add_country_modifier = {
+            name = "lst_castilian_spirit"
+        }
+    }
+    option = {
+        trigger = {
+            213 = {
+                owned_by = ROOT
+                is_core = ROOT
+            }
+        }
+        name = flavor_lst.6.c
+        ai_chance = {factor = 1}
+        add_country_modifier = {
+            name = "lst_aragonese_bartering"
+        }
+    }
+}
