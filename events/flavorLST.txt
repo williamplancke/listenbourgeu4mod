@@ -176,7 +176,7 @@ country_event = {
 }
 country_event = {
     id = flavor_lst.6
-    title = flavor_lst.6.name
+    name = flavor_lst.6.name
     desc = flavor_lst.6.desc
     picture = MILITARY_CAMP_eventPicture
     is_triggered_only = yes
@@ -186,26 +186,23 @@ country_event = {
     }
     option = {
         trigger = {
-            227 = {
+            219 = {
                 owned_by = ROOT
                 is_core = ROOT
             }
         }
         name = flavor_lst.6.a
         ai_chance = {factor = 1}
-        set_country_flag = lst_colonial_age_ability
-    }
-    option = {
-        trigger = {
-            219 = {
-                owned_by = ROOT
-                is_core = ROOT
-            }
-        }
-        name = flavor_lst.6.b
-        ai_chance = {factor = 1}
         add_country_modifier = {
-            name = "lst_castilian_spirit"
+            name = "lst_castilian_persistence"
+            duration = -1
+        }
+        pyrenees_area = {
+            limit = {
+                NOT = { is_core = ROOT }
+                NOT = { is_permanent_claim = ROOT }
+            }
+            add_permanent_claim = ROOT
         }
     }
     option = {
@@ -215,10 +212,43 @@ country_event = {
                 is_core = ROOT
             }
         }
-        name = flavor_lst.6.c
+        name = flavor_lst.6.b
         ai_chance = {factor = 1}
         add_country_modifier = {
             name = "lst_aragonese_bartering"
+            duration = -1
         }
+        languedoc_area = {
+            limit = {
+                NOT = { is_core = ROOT }
+                NOT = { is_permanent_claim = ROOT }
+            }
+            add_permanent_claim = ROOT
+        }
+    }
+    option = {
+        trigger = {
+            OR = {
+            227 = {
+                owned_by = ROOT
+                is_core = ROOT
+            }
+            POR = {overlord = ROOT}
+            }
+        }
+        name = flavor_lst.6.c
+        ai_chance = {factor = 1}
+        set_country_flag = lst_colonial_age_ability
+        brittany_area = {
+            limit = {
+                NOT = { is_core = ROOT }
+                NOT = { is_permanent_claim = ROOT }
+            }
+            add_permanent_claim = ROOT
+        }
+        1112 = {add_permanent_claim = ROOT}
+        1113 = {add_permanent_claim = ROOT}
+        1116 = {add_permanent_claim = ROOT}
+        2239 = {add_permanent_claim = ROOT}
     }
 }
