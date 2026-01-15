@@ -66,7 +66,7 @@ country_event = {
 country_event = {
     # End of the civil war
     id = flavor_lst.3
-    name = flavor_lst.3.name
+    title = flavor_lst.3.name
     desc = flavor_lst.3.desc
     picture = MILITARY_CAMP_eventPicture
     fire_only_once = yes
@@ -176,7 +176,7 @@ country_event = {
 }
 country_event = {
     id = flavor_lst.6
-    name = flavor_lst.6.name
+    title = flavor_lst.6.name
     desc = flavor_lst.6.desc
     picture = MILITARY_CAMP_eventPicture
     is_triggered_only = yes
