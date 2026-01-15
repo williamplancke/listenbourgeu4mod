@@ -101,10 +101,6 @@ lst_missions_iberian_dominance = {
                 amount = 40
             }
             OR = {
-                227 = {
-                    owned_by = ROOT
-                    is_core = ROOT
-                }
                 219 = {
                     owned_by = ROOT
                     is_core = ROOT
