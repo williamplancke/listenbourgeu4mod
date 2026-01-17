@@ -249,4 +249,10 @@ country_event = {
             add_government_reform = iberian_march_reform
         }
     }
+    option = {
+        # Fast integration: POR becomes vassal and you gain cores on him
+    }
+    option = {
+        # 'Diplomatic option': gain 100/100/100 points and modifier that gives prestige and dip rep
+    }
 }
