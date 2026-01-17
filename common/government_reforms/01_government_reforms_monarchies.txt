@@ -7375,6 +7375,7 @@ crusader_nobility_reform = {
 iberian_march_reform = {
 	icon = "hispanic_monarchy"
 	allow_normal_conversion = yes
+	lock_level_when_selected = yes
 	potential = {
 		culture_group = iberian
 	}

@@ -227,3 +227,26 @@ country_event = {
         }
     }
 }
+country_event = {
+    id = flavor_lst.7
+    title = flavor_lst.7.name
+    desc = flavor_lst.7.desc
+    picture = MILITARY_CAMP_eventPicture
+    fire_only_once = yes
+    trigger = {
+        tag = LST
+        POR = {
+            is_subject_of = ROOT
+        }
+    }
+    mean_time_to_happen = { 2 months }
+    option = {
+        # Iberian march
+        name = flavor_lst.7.a
+        ai_chance = { factor = 1}
+        create_march = POR
+        POR = {
+            add_government_reform = iberian_march_reform
+        }
+    }
+}
