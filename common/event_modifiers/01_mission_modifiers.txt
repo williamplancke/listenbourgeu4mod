@@ -14898,3 +14898,7 @@ lst_aragonese_bartering = {
 	trade_steering = 0.3
 	ship_power_propagation = 0.2
 }
+lst_savior_of_portugal = {
+	prestige = 1
+	diplomatic_reputation = 2
+}
