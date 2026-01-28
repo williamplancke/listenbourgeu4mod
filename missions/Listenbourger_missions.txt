@@ -65,7 +65,10 @@ lst_missions_iberian_dominance = {
                     }
                     beieras_area = {
                         type = all
-                        owned_by = ROOT
+                        OR = {
+                            owned_by = ROOT
+                            owned_by_subject_of = ROOT
+                        }
                     }
                 }
                 add_country_modifier = {

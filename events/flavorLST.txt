@@ -253,7 +253,7 @@ country_event = {
         # Fast integration: POR becomes vassal and you gain cores on him
         name = flavor_lst.7.b
         ai_chance = { factor = 1}
-        create_vassal = POR
+        vassalize = POR
         232 = {
             add_core = ROOT
         }
@@ -269,7 +269,6 @@ country_event = {
         227 = {
             add_core = ROOT
         }
-        remove_historical_friend = POR
     }
     option = {
         # 'Diplomatic option': gain 100/100/100 points and modifier that gives prestige and dip rep
@@ -278,7 +277,7 @@ country_event = {
         add_mil_power = 100
         add_country_modifier = {
             name = "lst_savior_of_portugal"
-            duration = 10950 # 30 years
+            duration = -1
         }
     }
 }
