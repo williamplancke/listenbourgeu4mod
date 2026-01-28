@@ -213,6 +213,23 @@ lst_missions_civil_war = {
             }
         }
     }
+    lst_the_iberian_people = {
+        #icon
+        required_missions = {lst_rebuild_the_south}
+        trigger = {
+            iberia_region = {
+                type = all
+                owned_by = ROOT
+                religion = catholic
+            }
+            monthly_adm = 12
+        }
+        effect = {
+            # For each iberian culture that is not listenbourger already, create an event that converts the entire culture to listenbourger
+            set_country_flag = lst_culture_events1
+            add_ruler_personality = lawgiver_personality
+        }
+    }
 }
 lst_missions_empty2 = {
     slot = 4
