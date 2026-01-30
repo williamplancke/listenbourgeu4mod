@@ -5087,3 +5087,8 @@
  flavor_lst.6.a:0 "Implement the Castilian military practices"
  flavor_lst.6.b:0 "The Aragonese people have always been excellent with money"
  flavor_lst.6.c:0 "Recruit the Portugese navigators"
+ flavor_lst.7.name:0 "The fate of Portugal"
+ flavor_lst.7.desc:0 "With the Portugese crown finally being in our posession we must now carefully plan the future of this domain. Historically, the Portugese navigators have led the exploration of the Americas and Africa, in search of a more lucrative trade route to India and the Spice Islands. However we also have the means to partially integrate them immediately, thus gaining access to their lands earlier."
+ flavor_lst.7.a:0 "Just have them focus on their colonial efforts."
+ flavor_lst.7.b:0 "Let's just wipe them off the map."
+ flavor_lst.7.c:0 "We shall cooperate with the Portugese for mutual prosperity."
