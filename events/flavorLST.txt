@@ -283,3 +283,12 @@ country_event = {
         }
     }
 }
+# Culture conversion events
+country_event = {
+    id = flavor_lst_culture.1
+    name = flavor_lst_culture.1.name
+    desc = flavor_lst_culture.1.desc
+    option = {} # Harsh conversion 
+    option = {} # Conversion
+    option = {} # Cheaper conversion, later
+}
