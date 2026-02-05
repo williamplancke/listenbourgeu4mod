@@ -14902,3 +14902,34 @@ lst_savior_of_portugal = {
 	prestige = 1
 	diplomatic_reputation = 2
 }
+lst_conversion_attempts = {
+	culture_conversion_cost = -0.5
+	culture_conversion_time = -0.33
+}
+lst_cultural_purge = {
+	local_unrest = 4
+	local_development_cost = 0.20
+	local_manpower_modifier = -0.33
+}
+lst_andalucian_ferocity = {
+	fire_damage_received = -0.15
+}
+lst_aragonese_admirality = {
+	galley_power = 0.2
+}
+lst_basque_society = {
+	technology_cost = -0.1
+}
+lst_castilian_officers = {
+	army_tradition_decay = -0.1
+}
+lst_catalonian_defensiveness = {
+	max_attrition = 1
+	hostile_attrition = 1
+}
+lst_galician_shipyards = {
+	naval_forcelimit_modifier = 0.33
+}
+lst_portugese_navigators = {
+	range = 0.2
+}

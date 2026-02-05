@@ -285,10 +285,187 @@ country_event = {
 }
 # Culture conversion events
 country_event = {
-    id = flavor_lst_culture.1
-    name = flavor_lst_culture.1.name
+    id = flavor_lst_culture.1 # Andalusian
+    title = flavor_lst_culture.1.name
     desc = flavor_lst_culture.1.desc
-    option = {} # Harsh conversion 
-    option = {} # Conversion
-    option = {} # Cheaper conversion, later
+    option = {
+        name = flavor_lst_culture.1.a
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = andalucian
+                    owned_by = ROOT
+                }
+                change_culture = Listenbourger
+                add_base_manpower = -3
+                add_province_modifier = {
+                    name = lst_cultural_purge
+                    duration = 10950 # 30 years
+                }
+            }
+        }
+        add_stability = -1
+        set_country_flag = purged_andalucians
+    } # Harsh conversion 
+    option = {
+        name = flavor_lst_culture.1.b
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = andalucian
+                    owned_by = ROOT
+                }
+                change_culture = Listenbourger
+                add_base_manpower = -3
+            }
+        }
+    } # Conversion
+    option = {
+        name = flavor_lst_culture.1.c
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = andalucian
+                    owned_by = ROOT
+                }
+                add_province_modifier = {
+                    name = lst_conversion_attempts
+                    duration = 18250 # 50 years
+                }
+            }
+        }
+    } # Cheaper conversion, later
+}
+country_event = {
+    id = flavor_lst_culture.2 # Aragonese
+    title = flavor_lst_culture.2.name
+    desc = flavor_lst_culture.2.desc
+    option = {
+        name = flavor_lst_culture.2.a
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = aragonese
+                    owned_by = ROOT
+                }
+                change_culture = Listenbourger
+                add_base_manpower = -3
+                add_province_modifier = {
+                    name = lst_cultural_purge
+                    duration = 10950 # 30 years
+                }
+            }
+        }
+        add_stability = -1
+        set_country_flag = purged_aragonese
+    } # Harsh conversion 
+    option = {
+        name = flavor_lst_culture.2.b
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = aragonese
+                    owned_by = ROOT
+                }
+                change_culture = Listenbourger
+                add_base_manpower = -3
+            }
+        }
+    } # Conversion
+    option = {
+        name = flavor_lst_culture.2.c
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = aragonese
+                    owned_by = ROOT
+                }
+                add_province_modifier = {
+                    name = lst_conversion_attempts
+                    duration = 18250 # 50 years
+                }
+            }
+        }
+    } # Cheaper conversion, later
+}
+country_event = {
+    id = flavor_lst_culture.f
+    title = flavor_lst_culture.f.name
+    desc = flavor_lst_culture.f.desc
+    option = {
+        name = flavor_lst_culture.f.a
+        if = {
+            limit = {
+                has_country_flag = purged_andalucians
+            }
+            add_country_modifier = {
+                name = lst_andalucian_ferocity
+                duration = -1
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = purged_aragonese
+            }
+            add_country_modifier = {
+                name = lst_aragonese_admirality  
+                duration = -1
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = purged_basque
+            }
+            add_country_modifier = {
+                name = lst_basque_society
+                duration = -1
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = purged_castilians
+            }
+            add_country_modifier = {
+                name = lst_castilian_officers
+                duration = -1
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = purged_catalonians
+            }
+            add_country_modifier = {
+                name = lst_catalonian_defensiveness
+                duration = -1
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = purged_galicians
+            }
+            add_country_modifier = {
+                name = lst_galician_shipyards
+                duration = -1
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = purged_leonese
+            }
+            add_country_modifier = {
+                name = lst_leonese_faith
+                duration = -1
+            }
+        }
+        if = {
+            limit = {
+                has_country_flag = purged_portugese
+            }
+            add_country_modifier = {
+                name = lst_portugese_navigators
+                duration = -1
+            }
+        }
+
+    }
 }
