@@ -14930,6 +14930,15 @@ lst_catalonian_defensiveness = {
 lst_galician_shipyards = {
 	naval_forcelimit_modifier = 0.33
 }
+lst_leonese_faith = {
+	tolerance_own = 3
+	manpower_in_true_faith_provinces = 0.1
+}
 lst_portugese_navigators = {
 	range = 0.2
+}
+lst_one_vision_iberia = {
+	stability_cost_modifier = -0.2
+	prestige = 1
+	institution_growth = 0.33
 }

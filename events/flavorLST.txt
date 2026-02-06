@@ -466,6 +466,22 @@ country_event = {
                 duration = -1
             }
         }
+        if = {
+            limit = {
+                has_country_flag = purged_andalucians
+                has_country_flag = purged_aragonese
+                has_country_flag = purged_basque
+                has_country_flag = purged_castilians
+                has_country_flag = purged_catalonians
+                has_country_flag = purged_galicians
+                has_country_flag = purged_leonese
+                has_country_flag = purged_portugese
+            }
+            add_country_modifier = {
+                name = lst_one_vision_iberia
+                duration = 18250 # 50 years
+            }
+        }
 
     }
 }
