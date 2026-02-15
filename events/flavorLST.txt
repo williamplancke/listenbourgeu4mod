@@ -389,6 +389,58 @@ country_event = {
     } # Cheaper conversion, later
 }
 country_event = {
+    id = flavor_lst_culture.3 # Basque
+    title = flavor_lst_culture.3.name
+    desc = flavor_lst_culture.3.desc
+    option = {
+        name = flavor_lst_culture.3.a
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                change_culture = Listenbourger
+                add_base_manpower = -3
+                add_province_modifier = {
+                    name = lst_cultural_purge
+                    duration = 10950 # 30 years
+                }
+            }
+        }
+        add_stability = -1
+        set_country_flag = purged_basque
+    } # Harsh conversion 
+    option = {
+        name = flavor_lst_culture.3.b
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                change_culture = Listenbourger
+                add_base_manpower = -3
+            }
+        }
+    } # Conversion
+    option = {
+        name = flavor_lst_culture.3.c
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                add_province_modifier = {
+                    name = lst_conversion_attempts
+                    duration = 18250 # 50 years
+                }
+            }
+        }
+    } # Cheaper conversion, later
+}
+country_event = {
     id = flavor_lst_culture.f
     title = flavor_lst_culture.f.name
     desc = flavor_lst_culture.f.desc
