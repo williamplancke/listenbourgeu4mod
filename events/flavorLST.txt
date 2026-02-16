@@ -286,6 +286,22 @@ country_event = {
 # Culture conversion events
 country_event = {
     id = flavor_lst_culture.1 # Andalusian
+    trigger = {
+        iberia_region = {
+            OR = {
+                owned_by = ROOT
+                AND = {
+                    owned_by = POR
+                    POR = {
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
     title = flavor_lst_culture.1.name
     desc = flavor_lst_culture.1.desc
     option = {
@@ -338,6 +354,22 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.2 # Aragonese
+    trigger = {
+        iberia_region = {
+            OR = {
+                owned_by = ROOT
+                AND = {
+                    owned_by = POR
+                    POR = {
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
     title = flavor_lst_culture.2.name
     desc = flavor_lst_culture.2.desc
     option = {
@@ -390,6 +422,22 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.3 # Basque
+    trigger = {
+        iberia_region = {
+            OR = {
+                owned_by = ROOT
+                AND = {
+                    owned_by = POR
+                    POR = {
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
     title = flavor_lst_culture.3.name
     desc = flavor_lst_culture.3.desc
     option = {
@@ -442,6 +490,22 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.4 # Castilian
+    trigger = {
+        iberia_region = {
+            OR = {
+                owned_by = ROOT
+                AND = {
+                    owned_by = POR
+                    POR = {
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
     title = flavor_lst_culture.4.name
     desc = flavor_lst_culture.4.desc
     option = {
@@ -494,6 +558,22 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.5 # Catalan
+    trigger = {
+        iberia_region = {
+            OR = {
+                owned_by = ROOT
+                AND = {
+                    owned_by = POR
+                    POR = {
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
     title = flavor_lst_culture.5.name
     desc = flavor_lst_culture.5.desc
     option = {
@@ -546,6 +626,22 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.6 # Galician
+    trigger = {
+        iberia_region = {
+            OR = {
+                owned_by = ROOT
+                AND = {
+                    owned_by = POR
+                    POR = {
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
     title = flavor_lst_culture.6.name
     desc = flavor_lst_culture.6.desc
     option = {
@@ -598,6 +694,22 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.7 # Leonese
+    trigger = {
+        iberia_region = {
+            OR = {
+                owned_by = ROOT
+                AND = {
+                    owned_by = POR
+                    POR = {
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
     title = flavor_lst_culture.7.name
     desc = flavor_lst_culture.7.desc
     option = {
@@ -650,6 +762,22 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.8 # Portugese
+    trigger = {
+        iberia_region = {
+            OR = {
+                owned_by = ROOT
+                AND = {
+                    owned_by = POR
+                    POR = {
+                        is_subject_of = ROOT
+                    }
+                }
+            }
+        }
+    }
+    mean_time_to_happen = {
+        months = 12
+    }
     title = flavor_lst_culture.8.name
     desc = flavor_lst_culture.8.desc
     option = {
