@@ -529,11 +529,11 @@ country_event = {
         }
     } # Conversion
     option = {
-        name = flavor_lst_culture.3.c
+        name = flavor_lst_culture.5.c
         iberia_region = {
             if = {
                 limit = {
-                    culture = basque
+                    culture = catalan
                     owned_by = ROOT
                 }
                 add_province_modifier = {
@@ -545,15 +545,15 @@ country_event = {
     } # Cheaper conversion, later
 }
 country_event = {
-    id = flavor_lst_culture.3 # Galician
-    title = flavor_lst_culture.3.name
-    desc = flavor_lst_culture.3.desc
+    id = flavor_lst_culture.6 # Galician
+    title = flavor_lst_culture.6.name
+    desc = flavor_lst_culture.6.desc
     option = {
-        name = flavor_lst_culture.3.a
+        name = flavor_lst_culture.6.a
         iberia_region = {
             if = {
                 limit = {
-                    culture = basque
+                    culture = galician
                     owned_by = ROOT
                 }
                 change_culture = listenbourger
@@ -565,14 +565,14 @@ country_event = {
             }
         }
         add_stability = -1
-        set_country_flag = purged_basque
+        set_country_flag = purged_galician
     } # Harsh conversion 
     option = {
-        name = flavor_lst_culture.3.b
+        name = flavor_lst_culture.6.b
         iberia_region = {
             if = {
                 limit = {
-                    culture = basque
+                    culture = galician
                     owned_by = ROOT
                 }
                 change_culture = listenbourger
@@ -581,11 +581,11 @@ country_event = {
         }
     } # Conversion
     option = {
-        name = flavor_lst_culture.3.c
+        name = flavor_lst_culture.6.c
         iberia_region = {
             if = {
                 limit = {
-                    culture = basque
+                    culture = galician
                     owned_by = ROOT
                 }
                 add_province_modifier = {
@@ -597,15 +597,15 @@ country_event = {
     } # Cheaper conversion, later
 }
 country_event = {
-    id = flavor_lst_culture.3 # Leonese
-    title = flavor_lst_culture.3.name
-    desc = flavor_lst_culture.3.desc
+    id = flavor_lst_culture.7 # Leonese
+    title = flavor_lst_culture.7.name
+    desc = flavor_lst_culture.7.desc
     option = {
-        name = flavor_lst_culture.3.a
+        name = flavor_lst_culture.7.a
         iberia_region = {
             if = {
                 limit = {
-                    culture = basque
+                    culture = leonese
                     owned_by = ROOT
                 }
                 change_culture = listenbourger
@@ -617,14 +617,14 @@ country_event = {
             }
         }
         add_stability = -1
-        set_country_flag = purged_basque
+        set_country_flag = purged_leonese
     } # Harsh conversion 
     option = {
-        name = flavor_lst_culture.3.b
+        name = flavor_lst_culture.7.b
         iberia_region = {
             if = {
                 limit = {
-                    culture = basque
+                    culture = leonese
                     owned_by = ROOT
                 }
                 change_culture = listenbourger
@@ -633,11 +633,11 @@ country_event = {
         }
     } # Conversion
     option = {
-        name = flavor_lst_culture.3.c
+        name = flavor_lst_culture.7.c
         iberia_region = {
             if = {
                 limit = {
-                    culture = basque
+                    culture = leonese
                     owned_by = ROOT
                 }
                 add_province_modifier = {
@@ -649,15 +649,15 @@ country_event = {
     } # Cheaper conversion, later
 }
 country_event = {
-    id = flavor_lst_culture.3 # Portugese
-    title = flavor_lst_culture.3.name
-    desc = flavor_lst_culture.3.desc
+    id = flavor_lst_culture.8 # Portugese
+    title = flavor_lst_culture.8.name
+    desc = flavor_lst_culture.8.desc
     option = {
-        name = flavor_lst_culture.3.a
+        name = flavor_lst_culture.8.a
         iberia_region = {
             if = {
                 limit = {
-                    culture = basque
+                    culture = portugese
                     owned_by = ROOT
                 }
                 change_culture = listenbourger
@@ -669,14 +669,14 @@ country_event = {
             }
         }
         add_stability = -1
-        set_country_flag = purged_basque
+        set_country_flag = purged_portugese
     } # Harsh conversion 
     option = {
-        name = flavor_lst_culture.3.b
+        name = flavor_lst_culture.8.b
         iberia_region = {
             if = {
                 limit = {
-                    culture = basque
+                    culture = portugese
                     owned_by = ROOT
                 }
                 change_culture = listenbourger
@@ -685,11 +685,11 @@ country_event = {
         }
     } # Conversion
     option = {
-        name = flavor_lst_culture.3.c
+        name = flavor_lst_culture.8.c
         iberia_region = {
             if = {
                 limit = {
-                    culture = basque
+                    culture = portugese
                     owned_by = ROOT
                 }
                 add_province_modifier = {
