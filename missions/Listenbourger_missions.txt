@@ -205,7 +205,7 @@ lst_missions_civil_war = {
         }
         effect = {
             caseiere_area = {
-                change_culture = Listenbourger
+                change_culture = listenbourger
                 add_province_modifier = {
                     name = "lst_cassiere_guilds"
                     duration = 9125 # 25 years

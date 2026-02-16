@@ -101,16 +101,16 @@ country_event = {
                     exists = CSR
                 }
                 4942 = {
-                    change_culture = Listenbourger
+                    change_culture = listenbourger
                 }
                 4949 = {
-                    change_culture = Listenbourger
+                    change_culture = listenbourger
                 }
                 4960 = {
-                    change_culture = Listenbourger
+                    change_culture = listenbourger
                 }
                 4961 = {
-                    change_culture = Listenbourger
+                    change_culture = listenbourger
                 }
             }
         }
@@ -296,7 +296,7 @@ country_event = {
                     culture = andalucian
                     owned_by = ROOT
                 }
-                change_culture = Listenbourger
+                change_culture = listenbourger
                 add_base_manpower = -3
                 add_province_modifier = {
                     name = lst_cultural_purge
@@ -315,7 +315,7 @@ country_event = {
                     culture = andalucian
                     owned_by = ROOT
                 }
-                change_culture = Listenbourger
+                change_culture = listenbourger
                 add_base_manpower = -3
             }
         }
@@ -348,7 +348,7 @@ country_event = {
                     culture = aragonese
                     owned_by = ROOT
                 }
-                change_culture = Listenbourger
+                change_culture = listenbourger
                 add_base_manpower = -3
                 add_province_modifier = {
                     name = lst_cultural_purge
@@ -367,7 +367,7 @@ country_event = {
                     culture = aragonese
                     owned_by = ROOT
                 }
-                change_culture = Listenbourger
+                change_culture = listenbourger
                 add_base_manpower = -3
             }
         }
@@ -400,7 +400,7 @@ country_event = {
                     culture = basque
                     owned_by = ROOT
                 }
-                change_culture = Listenbourger
+                change_culture = listenbourger
                 add_base_manpower = -3
                 add_province_modifier = {
                     name = lst_cultural_purge
@@ -419,7 +419,267 @@ country_event = {
                     culture = basque
                     owned_by = ROOT
                 }
-                change_culture = Listenbourger
+                change_culture = listenbourger
+                add_base_manpower = -3
+            }
+        }
+    } # Conversion
+    option = {
+        name = flavor_lst_culture.3.c
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                add_province_modifier = {
+                    name = lst_conversion_attempts
+                    duration = 18250 # 50 years
+                }
+            }
+        }
+    } # Cheaper conversion, later
+}
+country_event = {
+    id = flavor_lst_culture.4 # Castilian
+    title = flavor_lst_culture.4.name
+    desc = flavor_lst_culture.4.desc
+    option = {
+        name = flavor_lst_culture.4.a
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = castillian
+                    owned_by = ROOT
+                }
+                change_culture = listenbourger
+                add_base_manpower = -3
+                add_province_modifier = {
+                    name = lst_cultural_purge
+                    duration = 10950 # 30 years
+                }
+            }
+        }
+        add_stability = -1
+        set_country_flag = purged_castillian
+    } # Harsh conversion 
+    option = {
+        name = flavor_lst_culture.4.b
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = castillian
+                    owned_by = ROOT
+                }
+                change_culture = listenbourger
+                add_base_manpower = -3
+            }
+        }
+    } # Conversion
+    option = {
+        name = flavor_lst_culture.4.c
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = castillian
+                    owned_by = ROOT
+                }
+                add_province_modifier = {
+                    name = lst_conversion_attempts
+                    duration = 18250 # 50 years
+                }
+            }
+        }
+    } # Cheaper conversion, later
+}
+country_event = {
+    id = flavor_lst_culture.5 # Catalan
+    title = flavor_lst_culture.5.name
+    desc = flavor_lst_culture.5.desc
+    option = {
+        name = flavor_lst_culture.5.a
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = catalan
+                    owned_by = ROOT
+                }
+                change_culture = listenbourger
+                add_base_manpower = -3
+                add_province_modifier = {
+                    name = lst_cultural_purge
+                    duration = 10950 # 30 years
+                }
+            }
+        }
+        add_stability = -1
+        set_country_flag = purged_catalan
+    } # Harsh conversion 
+    option = {
+        name = flavor_lst_culture.5.b
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = catalan
+                    owned_by = ROOT
+                }
+                change_culture = listenbourger
+                add_base_manpower = -3
+            }
+        }
+    } # Conversion
+    option = {
+        name = flavor_lst_culture.3.c
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                add_province_modifier = {
+                    name = lst_conversion_attempts
+                    duration = 18250 # 50 years
+                }
+            }
+        }
+    } # Cheaper conversion, later
+}
+country_event = {
+    id = flavor_lst_culture.3 # Galician
+    title = flavor_lst_culture.3.name
+    desc = flavor_lst_culture.3.desc
+    option = {
+        name = flavor_lst_culture.3.a
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                change_culture = listenbourger
+                add_base_manpower = -3
+                add_province_modifier = {
+                    name = lst_cultural_purge
+                    duration = 10950 # 30 years
+                }
+            }
+        }
+        add_stability = -1
+        set_country_flag = purged_basque
+    } # Harsh conversion 
+    option = {
+        name = flavor_lst_culture.3.b
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                change_culture = listenbourger
+                add_base_manpower = -3
+            }
+        }
+    } # Conversion
+    option = {
+        name = flavor_lst_culture.3.c
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                add_province_modifier = {
+                    name = lst_conversion_attempts
+                    duration = 18250 # 50 years
+                }
+            }
+        }
+    } # Cheaper conversion, later
+}
+country_event = {
+    id = flavor_lst_culture.3 # Leonese
+    title = flavor_lst_culture.3.name
+    desc = flavor_lst_culture.3.desc
+    option = {
+        name = flavor_lst_culture.3.a
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                change_culture = listenbourger
+                add_base_manpower = -3
+                add_province_modifier = {
+                    name = lst_cultural_purge
+                    duration = 10950 # 30 years
+                }
+            }
+        }
+        add_stability = -1
+        set_country_flag = purged_basque
+    } # Harsh conversion 
+    option = {
+        name = flavor_lst_culture.3.b
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                change_culture = listenbourger
+                add_base_manpower = -3
+            }
+        }
+    } # Conversion
+    option = {
+        name = flavor_lst_culture.3.c
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                add_province_modifier = {
+                    name = lst_conversion_attempts
+                    duration = 18250 # 50 years
+                }
+            }
+        }
+    } # Cheaper conversion, later
+}
+country_event = {
+    id = flavor_lst_culture.3 # Portugese
+    title = flavor_lst_culture.3.name
+    desc = flavor_lst_culture.3.desc
+    option = {
+        name = flavor_lst_culture.3.a
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                change_culture = listenbourger
+                add_base_manpower = -3
+                add_province_modifier = {
+                    name = lst_cultural_purge
+                    duration = 10950 # 30 years
+                }
+            }
+        }
+        add_stability = -1
+        set_country_flag = purged_basque
+    } # Harsh conversion 
+    option = {
+        name = flavor_lst_culture.3.b
+        iberia_region = {
+            if = {
+                limit = {
+                    culture = basque
+                    owned_by = ROOT
+                }
+                change_culture = listenbourger
                 add_base_manpower = -3
             }
         }

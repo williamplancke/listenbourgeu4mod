@@ -3,7 +3,7 @@
 owner = LST		
 controller = LST
 add_core = LST
-culture = Listenbourger
+culture = listenbourger
 religion = catholic
 hre = no
 base_tax = 2

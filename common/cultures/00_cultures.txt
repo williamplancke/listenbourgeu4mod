@@ -1485,7 +1485,7 @@ iberian	= {
 			Raisa Randa Safiya Salma Shakira Suraya Tahira Tarifa Thashim Umm Wahida Yasmin Zahida Zahra
 		}
 	}
-	Listenbourger = {
+	listenbourger = {
 		country = { } 
 		province = { local_has_caravel = yes local_has_galleon = yes }
 		primary = LST
