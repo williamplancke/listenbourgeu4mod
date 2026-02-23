@@ -286,6 +286,7 @@ country_event = {
 # Culture conversion events
 country_event = {
     id = flavor_lst_culture.1 # Andalusian
+    picture = MILITARY_CAMP_eventPicture
     trigger = {
         iberia_region = {
             OR = {
@@ -354,6 +355,7 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.2 # Aragonese
+    picture = MILITARY_CAMP_eventPicture
     trigger = {
         iberia_region = {
             OR = {
@@ -422,6 +424,7 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.3 # Basque
+    picture = MILITARY_CAMP_eventPicture
     trigger = {
         iberia_region = {
             OR = {
@@ -490,6 +493,7 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.4 # Castilian
+    picture = MILITARY_CAMP_eventPicture
     trigger = {
         iberia_region = {
             OR = {
@@ -558,6 +562,7 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.5 # Catalan
+    picture = MILITARY_CAMP_eventPicture
     trigger = {
         iberia_region = {
             OR = {
@@ -626,6 +631,7 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.6 # Galician
+    picture = MILITARY_CAMP_eventPicture
     trigger = {
         iberia_region = {
             OR = {
@@ -694,6 +700,7 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.7 # Leonese
+    picture = MILITARY_CAMP_eventPicture
     trigger = {
         iberia_region = {
             OR = {
@@ -762,6 +769,7 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.8 # Portugese
+    picture = MILITARY_CAMP_eventPicture
     trigger = {
         iberia_region = {
             OR = {
@@ -830,6 +838,7 @@ country_event = {
 }
 country_event = {
     id = flavor_lst_culture.f
+    picture = MILITARY_CAMP_eventPicture
     title = flavor_lst_culture.f.name
     desc = flavor_lst_culture.f.desc
     option = {
