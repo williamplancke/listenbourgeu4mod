@@ -308,18 +308,15 @@ country_event = {
     desc = flavor_lst_culture.1.desc
     option = {
         name = flavor_lst_culture.1.a
-        iberia_region = {
-            if = {
-                limit = {
-                    culture = andalucian
-                    owned_by = ROOT
-                }
-                change_culture = listenbourger
-                add_base_manpower = -3
-                add_province_modifier = {
-                    name = lst_cultural_purge
-                    duration = 10950 # 30 years
-                }
+        every_owned_province = {
+            limit = {
+                culture = andalucian
+            }
+            change_culture = listenbourger
+            add_base_manpower = -3
+            add_province_modifier = {
+                name = lst_cultural_purge
+                duration = 10950 # 30 years
             }
         }
         add_stability = -1
@@ -327,31 +324,30 @@ country_event = {
     } # Harsh conversion 
     option = {
         name = flavor_lst_culture.1.b
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = andalucian
-                    owned_by = ROOT
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
             }
-        }
+        
     } # Conversion
     option = {
         name = flavor_lst_culture.1.c
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = andalucian
-                    owned_by = ROOT
+                    
                 }
                 add_province_modifier = {
                     name = lst_conversion_attempts
                     duration = 18250 # 50 years
                 }
             }
-        }
+        
     } # Cheaper conversion, later
 }
 country_event = {
@@ -379,11 +375,11 @@ country_event = {
     desc = flavor_lst_culture.2.desc
     option = {
         name = flavor_lst_culture.2.a
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = aragonese
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
@@ -392,37 +388,37 @@ country_event = {
                     duration = 10950 # 30 years
                 }
             }
-        }
+        
         add_stability = -1
         set_country_flag = purged_aragonese
     } # Harsh conversion 
     option = {
         name = flavor_lst_culture.2.b
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = aragonese
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
             }
-        }
+        
     } # Conversion
     option = {
         name = flavor_lst_culture.2.c
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = aragonese
-                    owned_by = ROOT
+                    
                 }
                 add_province_modifier = {
                     name = lst_conversion_attempts
                     duration = 18250 # 50 years
                 }
             }
-        }
+        
     } # Cheaper conversion, later
 }
 country_event = {
@@ -450,11 +446,11 @@ country_event = {
     desc = flavor_lst_culture.3.desc
     option = {
         name = flavor_lst_culture.3.a
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = basque
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
@@ -463,37 +459,37 @@ country_event = {
                     duration = 10950 # 30 years
                 }
             }
-        }
+        
         add_stability = -1
         set_country_flag = purged_basque
     } # Harsh conversion 
     option = {
         name = flavor_lst_culture.3.b
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = basque
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
             }
-        }
+        
     } # Conversion
     option = {
         name = flavor_lst_culture.3.c
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = basque
-                    owned_by = ROOT
+                    
                 }
                 add_province_modifier = {
                     name = lst_conversion_attempts
                     duration = 18250 # 50 years
                 }
             }
-        }
+        
     } # Cheaper conversion, later
 }
 country_event = {
@@ -521,11 +517,11 @@ country_event = {
     desc = flavor_lst_culture.4.desc
     option = {
         name = flavor_lst_culture.4.a
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = castillian
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
@@ -534,37 +530,37 @@ country_event = {
                     duration = 10950 # 30 years
                 }
             }
-        }
+        
         add_stability = -1
         set_country_flag = purged_castillian
     } # Harsh conversion 
     option = {
         name = flavor_lst_culture.4.b
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = castillian
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
             }
-        }
+        
     } # Conversion
     option = {
         name = flavor_lst_culture.4.c
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = castillian
-                    owned_by = ROOT
+                    
                 }
                 add_province_modifier = {
                     name = lst_conversion_attempts
                     duration = 18250 # 50 years
                 }
             }
-        }
+        
     } # Cheaper conversion, later
 }
 country_event = {
@@ -592,11 +588,11 @@ country_event = {
     desc = flavor_lst_culture.5.desc
     option = {
         name = flavor_lst_culture.5.a
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = catalan
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
@@ -605,37 +601,37 @@ country_event = {
                     duration = 10950 # 30 years
                 }
             }
-        }
+        
         add_stability = -1
         set_country_flag = purged_catalan
     } # Harsh conversion 
     option = {
         name = flavor_lst_culture.5.b
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = catalan
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
             }
-        }
+        
     } # Conversion
     option = {
         name = flavor_lst_culture.5.c
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = catalan
-                    owned_by = ROOT
+                    
                 }
                 add_province_modifier = {
                     name = lst_conversion_attempts
                     duration = 18250 # 50 years
                 }
             }
-        }
+        
     } # Cheaper conversion, later
 }
 country_event = {
@@ -663,11 +659,11 @@ country_event = {
     desc = flavor_lst_culture.6.desc
     option = {
         name = flavor_lst_culture.6.a
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = galician
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
@@ -676,37 +672,37 @@ country_event = {
                     duration = 10950 # 30 years
                 }
             }
-        }
+        
         add_stability = -1
         set_country_flag = purged_galician
     } # Harsh conversion 
     option = {
         name = flavor_lst_culture.6.b
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = galician
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
             }
-        }
+        
     } # Conversion
     option = {
         name = flavor_lst_culture.6.c
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = galician
-                    owned_by = ROOT
+                    
                 }
                 add_province_modifier = {
                     name = lst_conversion_attempts
                     duration = 18250 # 50 years
                 }
             }
-        }
+        
     } # Cheaper conversion, later
 }
 country_event = {
@@ -734,11 +730,11 @@ country_event = {
     desc = flavor_lst_culture.7.desc
     option = {
         name = flavor_lst_culture.7.a
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = leonese
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
@@ -747,37 +743,37 @@ country_event = {
                     duration = 10950 # 30 years
                 }
             }
-        }
+        
         add_stability = -1
         set_country_flag = purged_leonese
     } # Harsh conversion 
     option = {
         name = flavor_lst_culture.7.b
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = leonese
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
             }
-        }
+        
     } # Conversion
     option = {
         name = flavor_lst_culture.7.c
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = leonese
-                    owned_by = ROOT
+                    
                 }
                 add_province_modifier = {
                     name = lst_conversion_attempts
                     duration = 18250 # 50 years
                 }
             }
-        }
+        
     } # Cheaper conversion, later
 }
 country_event = {
@@ -805,11 +801,11 @@ country_event = {
     desc = flavor_lst_culture.8.desc
     option = {
         name = flavor_lst_culture.8.a
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = portugese
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
@@ -818,37 +814,37 @@ country_event = {
                     duration = 10950 # 30 years
                 }
             }
-        }
+        
         add_stability = -1
         set_country_flag = purged_portugese
     } # Harsh conversion 
     option = {
         name = flavor_lst_culture.8.b
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = portugese
-                    owned_by = ROOT
+                    
                 }
                 change_culture = listenbourger
                 add_base_manpower = -3
             }
-        }
+        
     } # Conversion
     option = {
         name = flavor_lst_culture.8.c
-        iberia_region = {
-            if = {
+        every_owned_province = {
+            
                 limit = {
                     culture = portugese
-                    owned_by = ROOT
+                    
                 }
                 add_province_modifier = {
                     name = lst_conversion_attempts
                     duration = 18250 # 50 years
                 }
-            }
-        }
+         }
+        
     } # Cheaper conversion, later
 }
 country_event = {
