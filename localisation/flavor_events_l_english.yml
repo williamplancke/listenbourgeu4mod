@@ -5133,6 +5133,7 @@
  flavor_lst_culture.8.a:0 "Take everything from them!"
  flavor_lst_culture.8.b:0 "Assimilate them"
  flavor_lst_culture.8.c:0 "We can deal with them later."
+ flavor_lst_culture.8.tooltip:0 "All Portugese provinces in Iberia owned by us or Portugal get §Y'Conversion attempts'§! for §Y50 years§!, giving the following effects:\nCulture Conversion Cost: §G-50.0%§!\nCulture Conversion Time: §G-33.0%§!"
  flavor_lst_culture.f.name:0 "The Iberian people"
  flavor_lst_culture.f.desc:0 "We have dealt with the Iberian cultures one by one and our rule over them is absolute."
  flavor_lst_culture.f.a:0 "Great!"
