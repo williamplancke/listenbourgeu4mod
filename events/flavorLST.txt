@@ -382,13 +382,16 @@ country_event = {
 	# Conversion
 	option = {
 		name = flavor_lst_culture.1.c
-		every_owned_province = {
-			limit = {
-				culture = andalucian
-			}
-			add_province_modifier = {
-				name = lst_conversion_attempts
-				duration = 18250				# 50 years
+		custom_tooltip = flavor_lst_culture.1.c.tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = andalucian
+				}
+				add_province_modifier = {
+					name = lst_conversion_attempts
+					duration = 18250					# 50 years
+				}
 			}
 		}
 	}
@@ -448,13 +451,16 @@ country_event = {
 	# Conversion
 	option = {
 		name = flavor_lst_culture.2.c
-		every_owned_province = {
-			limit = {
-				culture = aragonese
-			}
-			add_province_modifier = {
-				name = lst_conversion_attempts
-				duration = 18250				# 50 years
+		custom_tooltip = flavor_lst_culture.2.c.tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = aragonese
+				}
+				add_province_modifier = {
+					name = lst_conversion_attempts
+					duration = 18250					# 50 years
+				}
 			}
 		}
 	}
@@ -514,13 +520,16 @@ country_event = {
 	# Conversion
 	option = {
 		name = flavor_lst_culture.3.c
-		every_owned_province = {
-			limit = {
-				culture = basque
-			}
-			add_province_modifier = {
-				name = lst_conversion_attempts
-				duration = 18250				# 50 years
+		custom_tooltip = flavor_lst_culture.3.c.tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = basque
+				}
+				add_province_modifier = {
+					name = lst_conversion_attempts
+					duration = 18250					# 50 years
+				}
 			}
 		}
 	}
@@ -580,13 +589,16 @@ country_event = {
 	# Conversion
 	option = {
 		name = flavor_lst_culture.4.c
-		every_owned_province = {
-			limit = {
-				culture = castillian
-			}
-			add_province_modifier = {
-				name = lst_conversion_attempts
-				duration = 18250				# 50 years
+		custom_tooltip = flavor_lst_culture.4.c.tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = castillian
+				}
+				add_province_modifier = {
+					name = lst_conversion_attempts
+					duration = 18250					# 50 years
+				}
 			}
 		}
 	}
@@ -646,13 +658,16 @@ country_event = {
 	# Conversion
 	option = {
 		name = flavor_lst_culture.5.c
-		every_owned_province = {
-			limit = {
-				culture = catalan
-			}
-			add_province_modifier = {
-				name = lst_conversion_attempts
-				duration = 18250				# 50 years
+		custom_tooltip = flavor_lst_culture.5.c.tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = catalan
+				}
+				add_province_modifier = {
+					name = lst_conversion_attempts
+					duration = 18250					# 50 years
+				}
 			}
 		}
 	}
@@ -712,13 +727,16 @@ country_event = {
 	# Conversion
 	option = {
 		name = flavor_lst_culture.6.c
-		every_owned_province = {
-			limit = {
-				culture = galician
-			}
-			add_province_modifier = {
-				name = lst_conversion_attempts
-				duration = 18250				# 50 years
+		custom_tooltip = flavor_lst_culture.6.c.tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = galician
+				}
+				add_province_modifier = {
+					name = lst_conversion_attempts
+					duration = 18250					# 50 years
+				}
 			}
 		}
 	}
@@ -778,13 +796,16 @@ country_event = {
 	# Conversion
 	option = {
 		name = flavor_lst_culture.7.c
-		every_owned_province = {
-			limit = {
-				culture = leonese
-			}
-			add_province_modifier = {
-				name = lst_conversion_attempts
-				duration = 18250				# 50 years
+		custom_tooltip = flavor_lst_culture.7.c.tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = leonese
+				}
+				add_province_modifier = {
+					name = lst_conversion_attempts
+					duration = 18250					# 50 years
+				}
 			}
 		}
 	}
@@ -844,7 +865,7 @@ country_event = {
 	# Conversion
 	option = {
 		name = flavor_lst_culture.8.c
-		custom_tooltip = flavor_lst_culture.8.tooltip
+		custom_tooltip = flavor_lst_culture.8.c.tooltip
 		hidden_effect = {
 			iberia_region = {
 				limit = {
