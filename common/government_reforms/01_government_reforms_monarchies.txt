@@ -7379,13 +7379,13 @@ iberian_march_reform = {
 	potential = {
 		culture_group = iberian
 	}
-	allow = {
+	trigger = {
 		is_subject_of_type = march
 	}
 	modifiers = {
 		colonists = 2
 		colonist_placement_chance = 0.1
-		global_colonial_growth = 0.2
+		global_colonial_growth = 20
 		may_explore = yes
 		naval_forcelimit_modifier = 0.5
 		global_sailors_modifier = 0.5
