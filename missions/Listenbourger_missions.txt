@@ -207,7 +207,7 @@ lst_missions_civil_war = {
             caseiere_area = {
                 change_culture = listenbourger
                 add_province_modifier = {
-                    name = "lst_cassiere_guilds"
+                    name = lst_cassiere_guilds
                     duration = 9125 # 25 years
                 }
             }
@@ -221,12 +221,11 @@ lst_missions_civil_war = {
                 type = all
                 owned_by = ROOT
                 religion = catholic
+                culture = listenbourger
             }
             monthly_adm = 12
         }
         effect = {
-            # For each iberian culture that is not listenbourger already, create an event that converts the entire culture to listenbourger
-            set_country_flag = lst_culture_events1
             add_ruler_personality = lawgiver_personality
         }
     }

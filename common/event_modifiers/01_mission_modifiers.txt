@@ -14942,3 +14942,7 @@ lst_one_vision_iberia = {
 	prestige = 1
 	institution_growth = 0.33
 }
+lst_cassiere_guilds = {
+	trade_goods_size_modifier = 0.1
+	province_trade_power_modifier = 0.25
+}
