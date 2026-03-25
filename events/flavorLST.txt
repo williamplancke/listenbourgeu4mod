@@ -336,6 +336,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		iberia_region = {
+			type = all
 			OR = {
 				owned_by = ROOT
 				AND = {
@@ -354,18 +355,21 @@ country_event = {
 	desc = flavor_lst_culture.1.desc
 	option = {
 		name = flavor_lst_culture.1.a
-		every_owned_province = {
-			limit = {
-				culture = andalucian
-			}
-			change_culture = listenbourger
-			add_base_manpower = -3
-			add_province_modifier = {
-				name = lst_cultural_purge
-				duration = 10950				# 30 years
+		custom_tooltip = flavor_lst_culture.1.a.tooltip
+		add_stability = -1
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = andalucian
+				}
+				change_culture = listenbourger
+				add_base_manpower = -3
+				add_province_modifier = {
+					name = lst_cultural_purge
+					duration = 10950					# 30 years
+				}
 			}
 		}
-		add_stability = -1
 		set_country_flag = purged_andalucians
 	}
 	# Harsh conversion 
