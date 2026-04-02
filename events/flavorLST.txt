@@ -349,14 +349,59 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12
+		months = 120
+		modifier = {
+			is_year = 1480
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1490
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1500
+			factor = 0.9
+		}
+		modifier = {
+			stability = 1
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 20
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 40
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
 	}
 	title = flavor_lst_culture.1.name
 	desc = flavor_lst_culture.1.desc
 	option = {
 		name = flavor_lst_culture.1.a
 		custom_tooltip = flavor_lst_culture.1.a.tooltip
-		add_stability = -1
+		if = {
+			limit = {
+				stability = -2
+			}
+			add_stability = -1
+		}
+		else = {
+			add_adm_power = -100
+		}
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -421,7 +466,44 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12
+		months = 120
+		modifier = {
+			is_year = 1480
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1490
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1500
+			factor = 0.9
+		}
+		modifier = {
+			stability = 1
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 20
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 40
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
 	}
 	title = flavor_lst_culture.2.name
 	desc = flavor_lst_culture.2.desc
@@ -439,7 +521,15 @@ country_event = {
 				duration = 10950				# 30 years
 			}
 		}
-		add_stability = -1
+		if = {
+			limit = {
+				stability = -2
+			}
+			add_stability = -1
+		}
+		else = {
+			add_adm_power = -100
+		}
 		set_country_flag = purged_aragonese
 	}
 	# Harsh conversion 
@@ -491,7 +581,44 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12
+		months = 120
+		modifier = {
+			is_year = 1480
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1490
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1500
+			factor = 0.9
+		}
+		modifier = {
+			stability = 1
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 20
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 40
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
 	}
 	title = flavor_lst_culture.3.name
 	desc = flavor_lst_culture.3.desc
@@ -509,7 +636,15 @@ country_event = {
 				duration = 10950				# 30 years
 			}
 		}
-		add_stability = -1
+		if = {
+			limit = {
+				stability = -2
+			}
+			add_stability = -1
+		}
+		else = {
+			add_adm_power = -100
+		}
 		set_country_flag = purged_basque
 	}
 	# Harsh conversion 
@@ -561,7 +696,44 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12
+		months = 120
+		modifier = {
+			is_year = 1480
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1490
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1500
+			factor = 0.9
+		}
+		modifier = {
+			stability = 1
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 20
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 40
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
 	}
 	title = flavor_lst_culture.4.name
 	desc = flavor_lst_culture.4.desc
@@ -579,7 +751,15 @@ country_event = {
 				duration = 10950				# 30 years
 			}
 		}
-		add_stability = -1
+		if = {
+			limit = {
+				stability = -2
+			}
+			add_stability = -1
+		}
+		else = {
+			add_adm_power = -100
+		}
 		set_country_flag = purged_castillian
 	}
 	# Harsh conversion 
@@ -631,7 +811,44 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12
+		months = 120
+		modifier = {
+			is_year = 1480
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1490
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1500
+			factor = 0.9
+		}
+		modifier = {
+			stability = 1
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 20
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 40
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
 	}
 	title = flavor_lst_culture.5.name
 	desc = flavor_lst_culture.5.desc
@@ -649,7 +866,15 @@ country_event = {
 				duration = 10950				# 30 years
 			}
 		}
-		add_stability = -1
+		if = {
+			limit = {
+				stability = -2
+			}
+			add_stability = -1
+		}
+		else = {
+			add_adm_power = -100
+		}
 		set_country_flag = purged_catalan
 	}
 	# Harsh conversion 
@@ -701,7 +926,44 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12
+		months = 120
+		modifier = {
+			is_year = 1480
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1490
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1500
+			factor = 0.9
+		}
+		modifier = {
+			stability = 1
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 20
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 40
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
 	}
 	title = flavor_lst_culture.6.name
 	desc = flavor_lst_culture.6.desc
@@ -719,7 +981,15 @@ country_event = {
 				duration = 10950				# 30 years
 			}
 		}
-		add_stability = -1
+		if = {
+			limit = {
+				stability = -2
+			}
+			add_stability = -1
+		}
+		else = {
+			add_adm_power = -100
+		}
 		set_country_flag = purged_galician
 	}
 	# Harsh conversion 
@@ -771,7 +1041,44 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12
+		months = 120
+		modifier = {
+			is_year = 1480
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1490
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1500
+			factor = 0.9
+		}
+		modifier = {
+			stability = 1
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 20
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 40
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
 	}
 	title = flavor_lst_culture.7.name
 	desc = flavor_lst_culture.7.desc
@@ -789,7 +1096,15 @@ country_event = {
 				duration = 10950				# 30 years
 			}
 		}
-		add_stability = -1
+		if = {
+			limit = {
+				stability = -2
+			}
+			add_stability = -1
+		}
+		else = {
+			add_adm_power = -100
+		}
 		set_country_flag = purged_leonese
 	}
 	# Harsh conversion 
@@ -841,7 +1156,44 @@ country_event = {
 		}
 	}
 	mean_time_to_happen = {
-		months = 12
+		months = 120
+		modifier = {
+			is_year = 1480
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1490
+			factor = 0.9
+		}
+		modifier = {
+			is_year = 1500
+			factor = 0.9
+		}
+		modifier = {
+			stability = 1
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 20
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 30
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
+		modifier = {
+			num_of_owned_provinces_with = {
+				value = 40
+				culture = listenbourger
+			}
+			factor = 0.9
+		}
 	}
 	title = flavor_lst_culture.8.name
 	desc = flavor_lst_culture.8.desc
@@ -859,7 +1211,15 @@ country_event = {
 				duration = 10950				# 30 years
 			}
 		}
-		add_stability = -1
+		if = {
+			limit = {
+				stability = -2
+			}
+			add_stability = -1
+		}
+		else = {
+			add_adm_power = -100
+		}
 		set_country_flag = purged_portugese
 	}
 	# Harsh conversion 
