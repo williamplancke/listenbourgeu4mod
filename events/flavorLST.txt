@@ -510,15 +510,17 @@ country_event = {
 	option = {
 		name = flavor_lst_culture.2.a
 		custom_tooltip = flavor_lst_culture.2.a.tooltip
-		every_owned_province = {
-			limit = {
-				culture = aragonese
-			}
-			change_culture = listenbourger
-			add_base_manpower = -3
-			add_province_modifier = {
-				name = lst_cultural_purge
-				duration = 10950				# 30 years
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = aragonese
+				}
+				change_culture = listenbourger
+				add_base_manpower = -3
+				add_province_modifier = {
+					name = lst_cultural_purge
+					duration = 10950					# 30 years
+				}
 			}
 		}
 		if = {
@@ -625,15 +627,17 @@ country_event = {
 	option = {
 		name = flavor_lst_culture.3.a
 		custom_tooltip = flavor_lst_culture.3.a.tooltip
-		every_owned_province = {
-			limit = {
-				culture = basque
-			}
-			change_culture = listenbourger
-			add_base_manpower = -3
-			add_province_modifier = {
-				name = lst_cultural_purge
-				duration = 10950				# 30 years
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = basque
+				}
+				change_culture = listenbourger
+				add_base_manpower = -3
+				add_province_modifier = {
+					name = lst_cultural_purge
+					duration = 10950					# 30 years
+				}
 			}
 		}
 		if = {
@@ -740,15 +744,17 @@ country_event = {
 	option = {
 		name = flavor_lst_culture.4.a
 		custom_tooltip = flavor_lst_culture.4.a.tooltip
-		every_owned_province = {
-			limit = {
-				culture = castillian
-			}
-			change_culture = listenbourger
-			add_base_manpower = -3
-			add_province_modifier = {
-				name = lst_cultural_purge
-				duration = 10950				# 30 years
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = castillian
+				}
+				change_culture = listenbourger
+				add_base_manpower = -3
+				add_province_modifier = {
+					name = lst_cultural_purge
+					duration = 10950					# 30 years
+				}
 			}
 		}
 		if = {
@@ -855,15 +861,17 @@ country_event = {
 	option = {
 		name = flavor_lst_culture.5.a
 		custom_tooltip = flavor_lst_culture.5.a.tooltip
-		every_owned_province = {
-			limit = {
-				culture = catalan
-			}
-			change_culture = listenbourger
-			add_base_manpower = -3
-			add_province_modifier = {
-				name = lst_cultural_purge
-				duration = 10950				# 30 years
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = catalan
+				}
+				change_culture = listenbourger
+				add_base_manpower = -3
+				add_province_modifier = {
+					name = lst_cultural_purge
+					duration = 10950					# 30 years
+				}
 			}
 		}
 		if = {
@@ -970,15 +978,17 @@ country_event = {
 	option = {
 		name = flavor_lst_culture.6.a
 		custom_tooltip = flavor_lst_culture.6.a.tooltip
-		every_owned_province = {
-			limit = {
-				culture = galician
-			}
-			change_culture = listenbourger
-			add_base_manpower = -3
-			add_province_modifier = {
-				name = lst_cultural_purge
-				duration = 10950				# 30 years
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = galician
+				}
+				change_culture = listenbourger
+				add_base_manpower = -3
+				add_province_modifier = {
+					name = lst_cultural_purge
+					duration = 10950					# 30 years
+				}
 			}
 		}
 		if = {
@@ -1085,15 +1095,17 @@ country_event = {
 	option = {
 		name = flavor_lst_culture.7.a
 		custom_tooltip = flavor_lst_culture.7.a.tooltip
-		every_owned_province = {
-			limit = {
-				culture = leonese
-			}
-			change_culture = listenbourger
-			add_base_manpower = -3
-			add_province_modifier = {
-				name = lst_cultural_purge
-				duration = 10950				# 30 years
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = leonese
+				}
+				change_culture = listenbourger
+				add_base_manpower = -3
+				add_province_modifier = {
+					name = lst_cultural_purge
+					duration = 10950					# 30 years
+				}
 			}
 		}
 		if = {
@@ -1200,15 +1212,17 @@ country_event = {
 	option = {
 		name = flavor_lst_culture.8.a
 		custom_tooltip = flavor_lst_culture.8.a.tooltip
-		every_owned_province = {
-			limit = {
-				culture = portugese
-			}
-			change_culture = listenbourger
-			add_base_manpower = -3
-			add_province_modifier = {
-				name = lst_cultural_purge
-				duration = 10950				# 30 years
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = portugese
+				}
+				change_culture = listenbourger
+				add_base_manpower = -3
+				add_province_modifier = {
+					name = lst_cultural_purge
+					duration = 10950					# 30 years
+				}
 			}
 		}
 		if = {
@@ -1305,7 +1319,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_flag = purged_castilians
+				has_country_flag = purged_castilian
 			}
 			add_country_modifier = {
 				name = lst_castilian_officers
@@ -1314,7 +1328,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_flag = purged_catalonians
+				has_country_flag = purged_catalan
 			}
 			add_country_modifier = {
 				name = lst_catalonian_defensiveness
@@ -1323,7 +1337,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_flag = purged_galicians
+				has_country_flag = purged_galician
 			}
 			add_country_modifier = {
 				name = lst_galician_shipyards
@@ -1353,9 +1367,9 @@ country_event = {
 				has_country_flag = purged_andalucians
 				has_country_flag = purged_aragonese
 				has_country_flag = purged_basque
-				has_country_flag = purged_castilians
-				has_country_flag = purged_catalonians
-				has_country_flag = purged_galicians
+				has_country_flag = purged_castilian
+				has_country_flag = purged_catalan
+				has_country_flag = purged_galician
 				has_country_flag = purged_leonese
 				has_country_flag = purged_portugese
 			}
